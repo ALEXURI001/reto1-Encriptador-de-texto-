@@ -1,0 +1,213 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background: url(/logos/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg);
+    background-size: 100%;
+   
+}
+
+main{
+    display: flex;
+    margin-left: 260px;
+    margin-top: 130px;
+
+}
+
+.input-texto{
+    margin-top: 80px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    border: 4px solid black;
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 50%;
+    background-image: url(/logos/Muñeco-alura.png);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: transparent;
+    color: black;
+    border: 4px solid black;
+}
+
+
+.argumento p{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.argumento{
+    margin-left: 20px;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+/*BOTON ENCRIPTAR*/
+.encriptar {
+  
+    --color: darkblue;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: transparent;
+}
+
+.encriptar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 160px;
+    width: 250px;
+    border-radius: 50%;
+   }
+   
+   .encriptar:hover {
+    color: #fff;
+   }
+   
+   .encriptar:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .encriptar:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .encriptar:active:before {
+    background: darkblue;
+    transition: background 0s;
+   }
+
+   /*BOTON DESENCRIPTAR*/
+   .desencriptar {
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: transparent;
+}
+
+
+.desencriptar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 160px;
+    width: 250px;
+    border-radius: 50%;
+   }
+   
+   .desencriptar:hover {
+    color: white;
+   }
+   
+   .desencriptar:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .desencriptar:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .desencriptar:active:before {
+    background: black;
+    transition: background 0s;
+   }
+
+
+.informacion {
+    font-size: 15px;
+}
+/*BOTON COPIAR*/
+.copiar {
+    margin-top: 20px;
+    margin-left: 73%;
+    padding: 0.8em 1.8em;
+    border: 2px solid #c3171a;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #c3171a;
+    border-radius: 6px;
+   }
+   
+   .copiar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #c3171a;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .copiar:hover::before {
+    width: 105%;
+   }
+   
+   .copiar:hover {
+    color: #111;
+   }
+
+
